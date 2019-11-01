@@ -42,6 +42,7 @@ If you go to ChatMessages/Create view page and try to create a message with "Emp
 
 Make sure to add an error message to tell users that all fields need to be filled if they hit the create button with blank input. 
 ```
+```
 [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ChatMessageId,Sender,Date,Message")] ChatMessage chatMessage)
